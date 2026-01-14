@@ -5,6 +5,7 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Desktop Styles */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
@@ -17,37 +18,28 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 35px 4%; /* Pushes logo more to the left corner */
+    padding: 30px 6%;
     align-items: center;
 }
 
 .logo { 
-    font-size: 2.5rem; /* Made bigger */
+    font-size: 2.5rem; 
     font-weight: bold; 
+    white-space: nowrap; /* Keeps text and emoji together */
 }
 
-/* Hover Effects for Nav */
 .nav-links a {
     text-decoration: none;
     color: white;
     margin-left: 20px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 25px;
     transition: 0.3s ease;
 }
 
-.nav-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.nav-book {
-    border: 1px solid white;
-}
-
-.nav-book:hover {
-    background: white;
-    color: #333;
-}
+.nav-item:hover { background: rgba(255, 255, 255, 0.2); }
+.nav-book { border: 1px solid white; }
+.nav-book:hover { background: white; color: #333; }
 
 .hero-content {
     text-align: center;
@@ -58,11 +50,9 @@ nav {
 
 .hero-subtext {
     font-size: 1.3rem;
-    margin-top: 25px; /* Gap between Paradise line and subtext */
-    margin-bottom: 40px; /* Gap before the button */
+    margin: 25px 0 40px 0;
 }
 
-/* Button Hover Effects */
 .hero-btn, .submit-btn {
     background: #00d2ff;
     color: white;
@@ -73,17 +63,14 @@ nav {
 }
 
 .hero-btn {
-    padding: 15px 40px;
+    padding: 15px 45px;
     border-radius: 35px;
     font-size: 1.1rem;
 }
 
-.hero-btn:hover, .submit-btn:hover {
-    background: #00b8e6;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
+.hero-btn:hover { transform: translateY(-3px); }
 
+/* Booking Section */
 .booking-section {
     background: #f0f2f5;
     padding: 100px 0;
@@ -112,4 +99,37 @@ input, select {
     width: 100%;
     padding: 15px;
     border-radius: 30px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content {
+        margin-top: 25%;
+    }
 }
