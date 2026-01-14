@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 4%; /* Pushes logo more to the left corner */
+    align-items: center;
+}
+
+.logo { 
+    font-size: 2.5rem; /* Made bigger */
+    font-weight: bold; 
+}
+
+/* Hover Effects for Nav */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-book {
+    border: 1px solid white;
+}
+
+.nav-book:hover {
+    background: white;
+    color: #333;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.hero-content h1 { font-size: 4rem; }
+
+.hero-subtext {
+    font-size: 1.3rem;
+    margin-top: 25px; /* Gap between Paradise line and subtext */
+    margin-bottom: 40px; /* Gap before the button */
+}
+
+/* Button Hover Effects */
+.hero-btn, .submit-btn {
+    background: #00d2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero-btn {
+    padding: 15px 40px;
+    border-radius: 35px;
+    font-size: 1.1rem;
+}
+
+.hero-btn:hover, .submit-btn:hover {
+    background: #00b8e6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.booking-section {
+    background: #f0f2f5;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 450px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaSide Travels | Paradise Awaits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <div class="logo">SeaSide 🌊</div>
+            <div class="nav-links">
+                <a href="#" class="nav-item">Packages</a>
+                <a href="javascript:void(0)" class="nav-book" onclick="scrollToBooking()">Book Now</a>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>Escape to Paradise</h1>
+            <p class="hero-subtext">Experience the world's most beautiful beaches.</p>
+            <button class="hero-btn" onclick="scrollToBooking()">Start Planning</button>
+        </div>
+    </header>
+
+    <section class="booking-section" id="booking-form">
+        <div class="form-card">
+            <h2>Book Your Trip</h2>
+            <form action="https://formsubmit.co/anshgarg845@gmail.com" method="POST">
+                
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://anshgarg845-spec.github.io/SeaSide/thanks.html">
+
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                
+                <select name="destination" required>
+                    <option value="" disabled selected>Select Destination</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Hawaii">Hawaii</option>
+                </select>
+
+                <input type="date" name="date" required>
+
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
